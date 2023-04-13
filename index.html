@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<!-- Vadyms branch -->
-<html>
+<html lang="en">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacy Hurst</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script src="index.js"></script> 
-<body>
+<script src="index.js"></script>
 
 <header>
 <ul class="tab">
     <span class="name">Stacy Hurst</span>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
     <li><a href="#" class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</a></li>
     <li><a href="#" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
-    <li><a href="#" class="tablinks" onclick="openCity(event, 'Home')">Home</a></li>
+    <li><a href="#" class="tablinks" onclick="openCity(event, 'Home')"id="defaultOpen">Home</a></li>
   </ul>
 </header>
-  
+
+
+<body>
   <div id="Home" class="tabcontent">
     <h1>Creative Fullstack Developer</h1>
     <img src="/selfie.png"
@@ -22,26 +28,20 @@
   
   <div id="About" class="tabcontent">
     <h1>When I'm not helping teams be productive while maintaing a healthy work-life balance, I'm doing the following things. </h1>
-    <Section>
-    <img src="https://images.unsplash.com/photo-1603199608333-a6652340cba8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-    width="200px"/>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolore 
-    inventore officiis saepe iusto! Ab animi nisi, nam commodi nostrum 
-    ipsum rem a quod, illum asperiores aut quam reiciendis. Officia.
-    </Section>
-    <Section>
-        <img src="/pokyhike.jpg"
-        width="200px"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolore 
-            inventore officiis saepe iusto! Ab animi nisi, nam commodi nostrum 
-            ipsum rem a quod, illum asperiores aut quam reiciendis. Officia.</p>
-        </Section>
-        <Section>
-            <img src="/soccergolf.webp"
-            width="200px"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolore 
-                inventore officiis saepe iusto! Ab animi nisi, nam commodi nostrum 
-                ipsum rem a quod, illum asperiores aut quam reiciendis. Officia.</p>
+    <Section id="section-a" class="grid">
+    <img src="https://images.unsplash.com/photo-1603199608333-a6652340cba8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="image"/><p>
+     I graduated from UC San Diego with a major in music. Music continues to be a part of my daily life by teaching piano
+    and performing. I love helping others learn to play and creating my own teaching materials as well as arranging
+    and composing. I also host a monthly piano players meetup. Contact me if you would like to learn more!</p>
+        <img src="/pokyhike.jpg" class="image"/>
+        <p>I love animals and have several pets including my silly dog, Poky (this photo is from a hike we did in San Diego),
+          a spunky black cat named Alaska, several peaceful fish and have recently adopted a sweet jumping spider named Seven (because he has seven legs).
+        </p>
+            <img src="/soccergolf.webp" class="image"/>
+            <p>In addition to hiking with my dog, I enjoy an active lifestyle while enjoying the great outdoors playing
+              golf and soccer. Definitely not a pro at either but I am learning and I like meeting people and socializing with teammates
+              in a competitive environment.
+            </p>
             </Section>
   </div>
 
@@ -50,5 +50,57 @@
     <h3>Portfolio</h3>
     <p>Check back soon for my upcoming projects!!</p>
   </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p> <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <input type="text" id="message" name="message"><br>
+      <input type="Submit" value="Submit">
+</form></p>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    const form = document.querySelector("#form")
+const submitButton = document.querySelector("#submit")
+const scriptURL = 'https://httpbin.org/post'
+
+form.addEventListener('submit', e => {
+  submitButton.disabled = true
+  e.preventDefault()
+  let requestBody = new FormData(form)
+  fetch(scriptURL, { method: 'POST', body: requestBody})
+    .then(response => {
+       alert('Success!', response)
+       submitButton.disabled = false
+      })
+    .catch(error => {
+    alert('Error!', error.message)
+      submitButton.disabled = false
+
+    }
+    )
+})
+    </script>
 </body>
-</html> 
+</html>
