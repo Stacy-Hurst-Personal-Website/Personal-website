@@ -1,6 +1,6 @@
 
 
-body {background-image: url("bgblue.jpg");
+body {background-image: url("peakpx.jpg");
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 1200px; /* You must set a specified height */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -13,22 +13,22 @@ body {background-image: url("bgblue.jpg");
   padding: 0;
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: rgb(114, 184, 211);
+  background-color: rgb(32, 142, 173);
 }
 
 /* Selects the second element of div siblings */
 div:nth-child(2) {
-  background: rgb(122, 133, 160);
 }
 
 .name {
   text-shadow: 2px 2px;
 }
 
+
 /* Style the links inside the list items */
 ul.tab li a {
   display: inline-block;
-  color: rgb(33, 105, 80);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,25 +40,42 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #ddd;}
+ul.tab li a:hover {background-color: rgb(221, 151, 126);}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: rgb(172, 129, 212);}
+ul.tab li a:focus, .active {background-color: rgb(222, 171, 149);}
 
 /* Style the tab content */
 .tabcontent {
-
   padding: 30px 12px 1px 30px;
-  border: 50px solid rgb(141, 126, 174);
   border-top: none;
-  color:rgb(33, 105, 80)
+  color:black
+}
+
+.intext {
+  font-size: 30px;
 }
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 255, 255);
   background-color: #f1f1f1;
   text-shadow: 2px 2px;
+}
+
+.disney {
+  font-size: 45px;
+  font-style: italic;
+}
+
+.quote {
+  width: 550px;
+  height: 400px;
+  padding: 50px;
+  background-color: rgb(203, 218, 231);
+  margin: 0; 
+  border: 15px solid rgb(187, 124, 7);
+  font-style: italic;
 }
 
 .name {
@@ -66,21 +83,27 @@ ul.tab li a:focus, .active {background-color: rgb(172, 129, 212);}
   padding: 14px;
   font-size: 40px;
 }
+
+
+
 .grid {
   display: grid;
-  grid-template-columns: 300px 500px;
-  column-gap: 10px;
-  row-gap: 1em;
-  font-size: x-large;
+  grid-template-columns:16% 50%;
+  font-size: 25px;
+  
 }
 
-header {
-  color:rgb(33, 105, 80);
+
+.gridhome {
+  display: grid;
+  grid-template-columns:50% 50% ;
+  font-size:70px;
 }
+
 
 .image {
   width: 265px;
-
+  padding-bottom: 10px;
 }
 
 

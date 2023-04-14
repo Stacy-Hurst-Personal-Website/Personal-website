@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stacy Hurst</title>
-<link rel="stylesheet" type="text/css" href="style.css" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script src="index.js"></script>
 
 <header>
@@ -22,38 +22,50 @@
 <body>
   <div id="Home" class="tabcontent">
     <h1>Creative Fullstack Developer</h1>
+    <div class="gridhome">
     <img src="/selfie.png"
-        width="200px"/>
-  </div>
+        height="850px"/>
+        <div class="quote">
+        “First, think. <br> Second, believe. <br> Third, dream. <br> And finally, dare.” <p> <div class="disney">-Walt Disney
   
+        </div>
+      </div>
+  </div>
+  </div>
   <div id="About" class="tabcontent">
     <h1>When I'm not helping teams be productive while maintaing a healthy work-life balance, I'm doing the following things. </h1>
     <Section id="section-a" class="grid">
-    <img src="https://images.unsplash.com/photo-1603199608333-a6652340cba8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="image"/><p>
-     I graduated from UC San Diego with a major in music. Music continues to be a part of my daily life by teaching piano
+    <p>
+    <img src="https://images.unsplash.com/photo-1603199608333-a6652340cba8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="image"/>
+    <div><h2>Music</h2>
+    I graduated from UC San Diego with a major in music. Music continues to be a part of my daily life by teaching piano
     and performing. I love helping others learn to play and creating my own teaching materials as well as arranging
-    and composing. I also host a monthly piano players meetup. Contact me if you would like to learn more!</p>
-        <img src="/pokyhike.jpg" class="image"/>
-        <p>I love animals and have several pets including my silly dog, Poky (this photo is from a hike we did in San Diego),
-          a spunky black cat named Alaska, several peaceful fish and have recently adopted a sweet jumping spider named Seven (because he has seven legs).
-        </p>
+    and composing. I also host a monthly piano players meetup. Contact me if you would like to learn more!</div>
+    <img src="/pokyhike.jpg" class="image"/>    
+    <div><h2>Pets</h2>
+      I love animals and have several pets including my silly dog, Poky (this photo is from a hike we did in San Diego),
+        a spunky black cat named Alaska, several peaceful fish and have recently adopted a sweet jumping spider named Seven (because he has seven legs).
+        </div>
             <img src="/soccergolf.webp" class="image"/>
-            <p>In addition to hiking with my dog, I enjoy an active lifestyle while enjoying the great outdoors playing
+            <div><h2>Sports</h2>
+            In addition to hiking with my dog, I enjoy an active lifestyle while enjoying the great outdoors playing
               golf and soccer. Definitely not a pro at either but I am learning and I like meeting people and socializing with teammates
               in a competitive environment.
-            </p>
+            </div>
             </Section>
   </div>
 
 <!-- Hello -->
   <div id="Portfolio" class="tabcontent">
-    <h3>Portfolio</h3>
+    <h2>Portfolio</h2>
+    <div class="intext">
     <p>Check back soon for my upcoming projects!!</p>
   </div>
-
+</div>
   <div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
+    <h2>Contact</h2>
     <p> <form>
+      <div class="intext">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label><br>
@@ -63,6 +75,7 @@
       <input type="Submit" value="Submit">
 </form></p>
   </div>
+</div>
 
   <script>
     function openCity(evt, cityName) {
