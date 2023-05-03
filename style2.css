@@ -1,0 +1,403 @@
+body {
+
+    background-image: url("peakpx.jpg");
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    border: 5vh solid rgb(0, 0, 0);
+
+}
+
+​
+
+
+.tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Change background color of links on hover */
+  ul.tab li a:hover {background-color: rgb(221, 151, 126);}
+  
+  /* Create an active/current tablink class */
+  ul.tab li a:focus, .active {background-color: rgb(222, 171, 149);}
+​
+
+ul.tab li {
+
+    float: left;
+
+}
+
+​
+
+ul.tab li a {
+
+    display: block;
+
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+    padding: 2vh;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    font-size: 3.5vh;
+
+    text-shadow: .2vh .2vh;
+
+}
+
+​
+
+/* Change background color of links on hover */
+
+ul.tab li a:hover {
+
+    background-color: rgb(221, 151, 126);
+
+}
+
+​
+
+/* Create an active/current tablink class */
+
+ul.tab li a:focus,
+
+.active {
+
+    background-color: rgb(222, 171, 149);
+
+}
+
+​
+
+/* Style the tab content */
+
+.tabcontent {
+
+    padding: 3vh;
+
+    border-top: none;
+
+    color: black;
+
+}
+
+​
+
+.intext {
+
+    font-size: 30px;
+
+}
+
+​
+
+.tab {
+
+    border: 1px solid rgb(255, 255, 255);
+
+    background-color: #F1F1F1;
+
+    text-shadow: .2vh .2vh;
+
+}
+
+​
+
+.disney {
+
+    font-size: 4vh;
+
+    font-style: italic;
+
+}
+
+​
+
+.quote {
+
+    width: 50vh;
+
+    height: 50vh;
+
+    padding: 2vh;
+
+    background-color: rgb(203, 218, 231);
+
+    margin: 0;
+
+    border: 2vh solid rgb(187, 124, 7);
+
+    font-style: italic;
+
+}
+
+​
+
+.name {
+
+    float: left;
+
+    padding: 2vh;
+
+    font-size: 3.5vh;
+
+}
+
+​
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    font-size: 2vh;
+
+    min-width: 0px;
+
+    grid-gap: 2vh;
+
+}
+
+​
+
+.grid .pets {
+
+    grid-column: 1 / span 2;
+
+    grid-row: 1;
+
+}
+
+​
+
+.grid .p {
+
+    grid-column: 3 / span 1;
+
+    grid-row: 1;
+
+}
+
+​
+
+.gridhome {
+
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+
+    font-size: 7vh;
+
+}
+
+​
+
+.image {
+
+    width: 20vh;
+
+    padding: 1vh;
+
+    grid-row: 1;
+
+    grid-column: 2 / span 1;
+
+}
+
+​
+
+.music {
+
+    grid-row: 2;
+
+    grid-column: 2 / span 2;
+
+}
+
+​
+
+.sports {
+
+    grid-row: 4 / 5;
+
+    grid-column: 2 / 4;
+
+    padding-bottom: 8vh;
+
+}
+
+​
+
+.spimage {
+
+    width: 20vh;
+
+    grid-row: 4 / 5;
+
+}
+
+​
+
+.tablinks {
+
+    float: right;
+
+}
+
+​
+
+.tablinks a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+    margin-left: .25em;
+
+}
+
+​
+
+.tablinks a:first-of-type {
+
+    margin-left: 0;
+
+}
+
+​
+
+/* Adjustments for small screens */
+
+@media only screen and (max-width: 768px) {
+
+    body {
+
+        margin: 0;
+
+        padding: 0;
+
+        height: auto;
+
+        border: none;
+
+    }
+
+​
+
+    .grid {
+
+        grid-template-columns: 100%;
+
+    }
+
+​
+
+    .tab {
+
+        border: none;
+
+    }
+
+​
+
+    .tabcontent {
+
+        padding: 2vh;
+
+    }
+
+​
+
+    .image {
+
+        width: 40%;
+
+        padding: 1vh;
+
+        grid-column: auto;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+​
+
+    .disney {
+
+        font-size: 3vh;
+
+    }
+
+​
+
+    .name {
+
+        font-size: 2.5vh;
+
+    }
+
+​
+
+    .spimage {
+
+        width: 40%;
+
+        grid-row: auto;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+​
+
+    .intext {
+
+        font-size: 2.5vh;
+
+    }
+
+​
+
+    .quote {
+
+        width: auto;
+
+        height: auto;
+
+        padding: 2vh;
+
+        margin: 2vh;
+
+    }
+
+​
+
+    .tab button {
+
+        font-size: 3vh;
+
+        padding: 1vh 1vh;
+
+    }
+
+​
+
+    .tab .name {
+
+        font-size: 2.5vh;
+
+        padding: 1vh;
+
+    }

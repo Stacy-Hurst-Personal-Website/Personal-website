@@ -26,8 +26,14 @@ body {background-image: url("peakpx.jpg");
   border-left: solid rgb(0, 0, 0) 5vh;
   border-right: solid rgb(0, 0, 0) 5vh;
   border-bottom: solid rgb(0, 0, 0) 5vh;
+  margin: 0;
+
+  padding: 0;
+
+  height: auto;
 }
  
+
  /* Style the list */
  ul.tab {
   list-style-type: none;
@@ -38,17 +44,14 @@ body {background-image: url("peakpx.jpg");
   background-color: rgb(32, 142, 173);
 }
 
-/* Selects the second element of div siblings */
-div:nth-child(2) {
-}
 
 .name {
-  text-shadow: 2px 2px;
+  text-shadow: .2vh .2vh;
   text-align: center;
 }
 
 
-/* Style the links inside the list items */
+
 ul.tab li a {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -89,6 +92,7 @@ ul.tab li a:focus, .active {background-color: rgb(222, 171, 149);}
   font-style: italic;
 }
 
+
 .quote {
   width: 50vh;
   height: 50vh;
@@ -111,47 +115,70 @@ ul.tab li a:focus, .active {background-color: rgb(222, 171, 149);}
   display: grid;
   grid-template-columns: repeat(4);
   grid-template-columns: 25vh 75vh 10vh;
-
+  grid-template-columns:17% 70% 13%;
   font-size: 2vh;
   min-width: 0px;
+  grid-gap: 2vh;
 }
 
 
 
 
 .grid .pets {
- grid-column: 1 / 3;
+ grid-column: 1 / span 2;
+ /* grid-row: 1 */
 }
 
 .grid .p {
-  grid-column: 3 /4;
+  grid-column: 3 / 4;
+  grid-row: 1
 }
 
 
 .gridhome {
   display: grid;
-  grid-template-columns: 50% 50% ;
   font-size:7vh;
+  grid-template-columns: 60% 40%;
 }
 
 
 .image {
   width: 20vh;
-  padding: 1vh 1vh 1vh 1vh;
-  grid-column: 3 / 4
+  padding: 1vh;
+  grid-column: 1 / span 2;
+
+  margin-left: auto;
+
+  margin-right: auto; */
 }
+
+
+
+  .pokyimage {
+    width: 20vh;
+    padding: 1vh;
+    grid-column: span 1 / 2;
+    margin-left: auto;
+  
+    margin-right: auto; */
+  
+  }
+
 
 .music {
   grid-column: 2 / 4;
+  grid-row: 1
 }
 .sports {
   grid-row: 4 / 5;
-  grid-column: 2 / 4;
+  grid-column: -3 / -1;
   padding-bottom: 8vh;
 }
 .spimage {
   width: 20vh;
+  grid-column: 1 / 2;
   grid-row: 4 / 5;
+  grid
 }
 .tablinks {
     float: right;
@@ -165,4 +192,4 @@ ul.tab li a:focus, .active {background-color: rgb(222, 171, 149);}
   
   .tablinks a:first-of-type {
     margin-left: 0;
-  }
+  } 
